@@ -1,0 +1,44 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Medium.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url(mixer.png);
+    color: whitesmoke;
+    background-size: cover;
+}
+.body{
+    height: 70%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.sub{
+    cursor: pointer;
+    position: relative;
+    right: -50px;
+    border-radius: 16px;
+    margin-top: 23px;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 10px 25px;
+    outline: none;
+    border: 3px solid white;
+    transition: 0.2s;
+    margin-left: -50px;
+}
+.sub:hover{
+    box-shadow: 1px -1px 37px -1px rgba(255, 255, 255, 0.42);
+}

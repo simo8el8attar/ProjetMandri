@@ -1,0 +1,498 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Medium.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-image: url(mixer3.png);
+    height: 100vh;
+    background-size: cover;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+    padding: 0 50px;
+}
+.navbar ul a{
+    color: rgb(215, 215, 215);
+    text-decoration: none;
+    margin: 15px;
+    font-size: 17px;
+    position: relative;
+    top: 32px;
+    transition: 0.2s ease;
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -3px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+.navbar a:hover{
+    color: white;
+
+}
+.navbar a:hover::after{
+    width: 100%;
+    box-shadow: 0 0 5px white,
+                0 0 25px white,
+                0 0 50px white,
+                0 0 100px white,
+                0 0 200px white;
+}
+.btn{
+    cursor: pointer;
+    position: relative;
+    right: -50px;
+    border-radius: 16px;
+    margin-top: 23px;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border: 3px solid white;
+    transition: 0.2s;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white,
+                0 0 25px white;
+}
+.logo h3 a{
+    display: inline-block;
+    color: rgb(215, 215, 215);
+    text-decoration: none;
+    position: absolute;
+    top: 28px;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.logo h3 a:hover{
+    color: white;
+    transform: scale(1.2);
+}
+i{
+    font-weight: bold;
+    font-size: larger;
+    position: relative;
+    top: 3px;
+}
+.searchbar{
+    position: absolute;
+    top: 27px;
+    left: 302px;
+}
+.searchbar input{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    border: 3px solid white;
+    background-color: transparent;
+    transition: 0.4s;
+}
+.searchbar label{
+    cursor: pointer;
+    position: absolute;
+    left: 11px;
+    top: 9px;
+}
+.searchbar input::placeholder{
+    color: transparent;
+}
+.searchbar input:focus{
+    padding-left: 35px ;
+    width: 410px;
+    height: 40px;
+    border-radius: 60px;
+    border: 3px solid white;
+    background-color: white;
+    outline: none;
+}
+.searchbar i{
+    position: absolute;
+    left: 0.5px;
+    color: white;
+    transition: 0.2s;
+    z-index: 1;
+    transform: scale(1.2);
+}
+.searchbar i:hover{
+    color: black;
+    transform: scale(1.5);
+}
+.searchbar input:hover{
+    background-color: white;
+    box-shadow: 0 0 5px white;
+
+}
+.marketing h3{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    line-height: 50px;
+}
+.marketing span{
+    font-size: 70px;
+}
+.marketing .lie{
+    position: absolute;
+    top: -17px;
+}
+.images .img1{
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    position: absolute;
+    top: 380px;
+    left: 210px;
+    box-shadow: 0 0 10px black,
+                0 0 25px black;
+    transition: 0.6s ease;
+}
+.images .img2{
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    position: absolute;
+    top: 380px;
+    left: 610px;
+    box-shadow: 0 0 10px black,
+                0 0 25px black;
+    transition: 0.6s ease;
+}
+.images .img3{
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    position: absolute;
+    top: 380px;
+    left: 1005px;
+    box-shadow: 0 0 10px black,
+                0 0 25px black;
+    transition: 0.6s ease;
+}
+.images .img1:hover{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 380px;
+    left: 210px;
+    box-shadow: 0 0 10px rgb(205, 205, 205),
+                0 0 25px rgb(205, 205, 205);
+    transform: scale(1.05);
+}
+.images .img2:hover{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 380px;
+    left: 610px;
+    box-shadow: 0 0 10px rgb(205, 205, 205),
+                0 0 25px rgb(205, 205, 205);
+    transform: scale(1.05);
+}
+.images .img3:hover{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 380px;
+    left: 1005px;
+    box-shadow: 0 0 10px rgb(205, 205, 205),
+                0 0 25px rgb(205, 205, 205);
+    transform: scale(1.05);
+}
+.marketing h4{
+    color: white;
+    position: relative;
+    top: 255px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.bio p{
+    color: white;
+    position: relative;
+    top: 620px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.credits h4{
+    color: white;
+    position: relative;
+    top: 625px;
+    font-size: 24px;
+    font-weight: lighter;
+}
+.rappers .img4{
+    cursor: pointer;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 890px;
+    left: 240px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px black;
+    transition: 0.3s ease;
+}
+.rappers .img5{
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 940px;
+    left: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px black;
+    transition: 0.3s ease;
+}
+.rappers .img6{
+    cursor: pointer;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 890px;
+    left: 660px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px black;
+    transition: 0.3s ease;
+}
+.rappers .img7{
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 940px;
+    left: 870px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px black;
+    transition: 0.3s ease;
+}
+.rappers .img8{
+    cursor: pointer;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 890px;
+    left: 1080px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px black;
+    transition: 0.3s ease;
+}
+.rappers .img4:hover{
+    cursor: pointer;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 890px;
+    left: 240px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px black;
+    transform: scale(1.07);
+}
+.rappers .img5:hover{
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 940px;
+    left: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px black;
+    transform: scale(1.1);
+}
+.rappers .img6:hover{
+    cursor: pointer;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 890px;
+    left: 660px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px black;
+    transform: scale(1.07);
+}
+.rappers .img7:hover{
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 940px;
+    left: 870px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px black;
+    transform: scale(1.1);
+}
+.rappers .img8:hover{
+    cursor: pointer;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 890px;
+    left: 1080px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px black;
+    transform: scale(1.07);
+}
+.madd{
+    color: white;
+    position: absolute;
+    top: 1305px;
+    left: 317px;
+}
+.kehlani{
+    color: white;
+    position: absolute;
+    top: 1255px;
+    left: 519px;
+}
+.stormy{
+    color: white;
+    position: absolute;
+    top: 1305px;
+    left: 730px;
+}
+.draga{
+    color: white;
+    position: absolute;
+    top: 1305px;
+    left: 1142px;
+}
+.bo9al{
+    color: white;
+    position: absolute;
+    top: 1255px;
+    left: 944px;
+}
+.shop h3{
+    color: white;
+    position: relative;
+    top: 1180px;
+    left: 8px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.studio{
+    width: 500px;
+    height: 450px;
+    position: relative;
+    top: 1200px;
+    left: 550px;
+    border-radius: 10px;
+    box-sizing: 0 0 25px black,
+                0 0 50px black;            
+}
+.shop .buy{
+    cursor: pointer;
+    background-color: red;
+    width: 255px;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    position: relative;
+    top: 1175px;
+    left: -500px;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+.shop .buy:hover{
+    background-color: rgb(150, 0, 0);
+    transform: scale(1.03);
+}
+.shop .learn{
+    cursor: pointer;
+    background-color: gray;
+    width: 255px;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    position: relative;
+    top: 1175px;
+    left: -500px;
+    transition: 0.3s ease;
+}
+.shop .learn:hover{
+    background-color: rgb(100, 100, 108);
+    transform: scale(1.03);
+}
+.purchase{
+    color: rgb(255, 250, 250);
+    font-size: 30px;
+    position: relative;
+    top: 733px;
+    left: 8px;
+    line-height: 32px;
+    letter-spacing: -2px;
+}
+.type{
+    color: white;
+    position: relative;
+    top: 756px;
+    left: 27px;
+}
+.purchase span{
+    font-size: 35px;
+    color: red;
+    position: relative;
+    top: -13px;
+}
+ul{
+    line-height: 30px;
+}
+.socials a i{
+    text-decoration: none;
+    color: white;
+    font-size: 33px;
+    position: relative;
+    justify-content: space-between;
+    margin: 10px 15px;
+    top: 935px;
+    left: 451px;
+    transition: 0.3s ease;
+}
+.socials a i:hover{
+    transform: scale(1.4);
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: 2070px;
+    left: 540px;
+    padding: 10px;
+}
+

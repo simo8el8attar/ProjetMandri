@@ -1,0 +1,120 @@
+.titre-side{
+  margin-top: 54px;
+  padding-left: 50px;
+  color: aliceblue;
+  font-size: 38px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+.homo{
+  margin-top: 54px;
+  padding-left: 60px;
+  color: aliceblue;
+  font-size: 38px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+.ttt{
+  margin-top: 54px;
+  padding-left: 18px;
+  color: aliceblue;
+  font-size: 38px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.side{
+  margin-top: px;
+  margin-left: 10px;
+  width: 90%;
+  height: 13%;
+  
+
+  border-radius: 10px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4a2480;
+  color: #FFFFFF;
+}
+
+header {
+  background-color: #4a2480;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  color: #282c34;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #282c34;
+  padding: 10px;
+
+}
+
+nav a {
+  color: #61dafb;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+}
+
+main {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.album {
+  text-align: center;
+  margin: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.album img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s;
+}
+
+.album:hover {
+  transform: scale(1.05);
+}
+
+.album-info {
+  background-color: #282c34;
+  padding: 15px;
+  text-align: center;
+}
+
+.album-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #61dafb;
+}
+
+.album-info p {
+  margin: 5px 0;
+  color: #FFFFFF;
+}
